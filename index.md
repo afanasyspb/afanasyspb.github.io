@@ -2,9 +2,17 @@
 layout: default
 ---
 <style>
-  /* Hide the default theme sidebar/header to avoid duplication */
+  /* Hide default theme elements to avoid duplication and overlap */
   header { display: none; }
-  section { width: 100% !important; max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+  footer { display: none !important; }
+  
+  /* Reset theme constraints */
+  section { 
+    width: 100% !important; 
+    max-width: 100% !important; 
+    margin: 0 !important; 
+    padding: 0 !important; 
+  }
   .wrapper { max-width: 1200px; }
 
   /* Responsive grid layout */
@@ -82,9 +90,15 @@ layout: default
     text-decoration: underline;
   }
 
-  /* Main content */
+  /* Main content styling */
   .main-content {
     line-height: 1.6;
+  }
+
+  .pub-category {
+    color: #666;
+    font-style: italic;
+    font-size: 0.95rem;
   }
 
   /* Timeline image container */
@@ -137,7 +151,7 @@ layout: default
     width: 1rem;
   }
 
-  /* Profile links */
+  /* Profile links buttons */
   .profile-links {
     display: flex;
     flex-wrap: wrap;
@@ -154,6 +168,7 @@ layout: default
     color: #007bff;
     transition: all 0.2s;
     font-size: 0.9rem;
+    border: 1px solid #eee;
   }
 
   .profile-links a:hover {
@@ -170,7 +185,7 @@ layout: default
     font-size: 0.9rem;
   }
 
-  /* Lightbox modal for timeline image */
+  /* Lightbox modal */
   .lightbox-modal {
     display: none;
     position: fixed;
@@ -231,7 +246,7 @@ layout: default
 
     <p><strong>Ilya M. Afanasyev, Ph.D.</strong>, is an Expert at the <strong>Chebyshev Research Center (Huawei)</strong> and an Adjunct Associate Professor at <strong>Innopolis University</strong> and <strong>Saint Petersburg Electrotechnical University "LETI"</strong>. He earned his Ph.D. in Optical and Optoelectronical Devices from Vavilov State Optical Institute (2006).</p>
 
-    <p>With over two decades of R&D experience, Dr. Afanasyev has worked in industry (Huawei, TGT, Giesecke & Devrient) and held academic positions at various institutions including the University of Trento, Innopolis University, KFU, ITMO, and SPbPU. He specializes in <strong>Autonomous Systems, Sensors, Computer Vision, and Mobile Robotics</strong>.</p>
+    <p>With over two decades of R&D experience, Dr. Afanasyev has worked in industry (Huawei, TGT, Giesecke & Devrient) and held academic positions at various institutions. He specializes in <strong>Autonomous Systems, Sensors, Computer Vision, and Mobile Robotics</strong>.</p>
 
     <p>He is a <strong>Marie Curie Fellow alumnus</strong>, holder of 2 patents, and author of 50+ publications indexed in Scopus/WoS.</p>
 
@@ -253,37 +268,47 @@ layout: default
 
     <h2>📚 Selected Publications & Patents</h2>
 
-    <p>Here are a few highlights. For the full list, please visit my <a href="https://scholar.google.ru/citations?user=Ogv_bdYAAAAJ" target="_blank">Google Scholar Profile</a>.</p>
+    <p>Please visit my <a href="https://scholar.google.ru/citations?user=Ogv_bdYAAAAJ" target="_blank">Google Scholar Profile</a> for the full list.</p>
 
-    <p><em><strong>Most Cited (SLAM Benchmarking)</strong><em><br>
-    1. <strong>Comparison of Various SLAM Systems for Mobile Robot in an Indoor Environment.</strong><br>
-    M. Filipenko, I. Afanasyev.
-    <em>9th IEEE International Conference on Intelligent Systems (IS)</em>, 2018.
-    [Cited by ~250+] <a href="https://doi.org/10.1109/IS.2018.8710464" target="_blank">DOI</a></p>
+    <p>
+      <span class="pub-category">Most Cited (SLAM Benchmarking)</span><br>
+      1. <strong>Comparison of Various SLAM Systems for Mobile Robot in an Indoor Environment.</strong><br>
+      M. Filipenko, I. Afanasyev. 
+      <em>9th IEEE International Conference on Intelligent Systems (IS)</em>, 2018. 
+      [Cited by ~250+] <a href="https://doi.org/10.1109/IS.2018.8710464" target="_blank">DOI</a>
+    </p>
 
-    <p><em><strong>Lidar SLAM & Ground Truth Analysis</strong><em><br>
-    2. <strong>Map Comparison of Lidar-based 2D SLAM Algorithms Using Precise Ground Truth.</strong><br>
-    R. Yagfarov, M. Ivanou, I. Afanasyev.
-    <em>Int. Conference on Control, Automation, Robotics and Vision (ICARCV)</em>, Singapore, 2018.
-    [Cited by ~130+]  <a href="https://doi.org/10.1109/ICARCV.2018.8581131" target="_blank">DOI</a></p>
+    <p>
+      <span class="pub-category">Lidar SLAM & Ground Truth Analysis</span><br>
+      2. <strong>Map Comparison of Lidar-based 2D SLAM Algorithms Using Precise Ground Truth.</strong><br>
+      R. Yagfarov, M. Ivanou, I. Afanasyev. 
+      <em>Int. Conference on Control, Automation, Robotics and Vision (ICARCV)</em>, Singapore, 2018. 
+      [Cited by ~130+] <a href="https://doi.org/10.1109/ICARCV.2018.8581131" target="_blank">DOI</a>
+    </p>
 
-    <p><em><strong>Top Journal (UAV Efficiency)</strong><em><br>
-    3. <strong>Game Theory-based Parameter Tuning for Energy-efficient Path Planning on Modern UAVs.</strong><br>
-    D. Moolchandani, I. Afanasyev, et al.
-    <em>ACM Transactions on Cyber-Physical Systems</em>, Vol. 6(4), 2022. 
-    <a href="https://doi.org/10.1145/3565270" target="_blank">DOI</a></p>
+    <p>
+      <span class="pub-category">Top Journal (UAV Efficiency)</span><br>
+      3. <strong>Game Theory-based Parameter Tuning for Energy-efficient Path Planning on Modern UAVs.</strong><br>
+      D. Moolchandani, I. Afanasyev, et al. 
+      <em>ACM Transactions on Cyber-Physical Systems</em>, Vol. 6(4), 2022. 
+      <a href="https://doi.org/10.1145/3565270" target="_blank">DOI</a>
+    </p>
 
-    <p><em><strong>Intelligent Systems & IoT</strong><em><br>
-    4. <strong>Towards the Internet of Robotic Things: Analysis, Architecture, Components and Challenges.</strong><br>
-    I. Afanasyev, et al.
-    <em>12th International Conference on Developments in eSystems Engineering (DeSE)</em>, 2019.
-    [Cited by ~80] <a href="https://arxiv.org/abs/1907.03817" target="_blank">arXiv</a></p>
+    <p>
+      <span class="pub-category">Intelligent Systems & IoT</span><br>
+      4. <strong>Towards the Internet of Robotic Things: Analysis, Architecture, Components and Challenges.</strong><br>
+      I. Afanasyev, et al. 
+      <em>12th International Conference on Developments in eSystems Engineering (DeSE)</em>, 2019. 
+      [Cited by ~80] <a href="https://arxiv.org/abs/1907.03817" target="_blank">arXiv</a>
+    </p>
 
-    <p><em><strong>Patents (Hardware & UAV)</strong><em><br>
-    5. <strong>Modular multi-rotor unmanned aerial vehicle of vertical take-off and landing.</strong><br>
-    M. Galimov, I. Afanasyev, et al.
-    <em>Patent RU 2706765</em>, 2019.
-    <a href="https://patents.google.com/patent/RU2706765C1/en" target="_blank">Google Patents</a></p>
+    <p>
+      <span class="pub-category">Patents (Hardware & UAV)</span><br>
+      5. <strong>Modular multi-rotor unmanned aerial vehicle of vertical take-off and landing.</strong><br>
+      M. Galimov, I. Afanasyev, et al. 
+      <em>Patent RU 2706765</em>, 2019. 
+      <a href="https://patents.google.com/patent/RU2706765C1/en" target="_blank">Google Patents</a>
+    </p>
 
     <h2>🎓 Teaching (Highlights)</h2>
 
