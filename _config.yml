@@ -1,3 +1,5 @@
 # _config.yml
+title: Ilya M. Afanasyev, Ph.D.
+description: Expert at Chebyshev Research Center (Huawei) & Adjunct Associate Professor
 theme: jekyll-theme-minimal
 show_downloads: false
