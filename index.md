@@ -1,8 +1,12 @@
 ---
 layout: default
 ---
-
 <style>
+  /* Hide the default theme sidebar/header to avoid duplication */
+  header { display: none; }
+  section { width: 100% !important; max-width: 100% !important; margin: 0 !important; padding: 0 !important; }
+  .wrapper { max-width: 1200px; }
+
   /* Responsive grid layout */
   .content-grid {
     display: grid;
@@ -10,12 +14,17 @@ layout: default
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 2rem 1.5rem;
   }
 
   @media (max-width: 768px) {
     .content-grid {
       grid-template-columns: 1fr;
+    }
+    .sidebar {
+      position: relative;
+      top: 0;
+      max-width: 100%;
     }
   }
 
@@ -87,19 +96,15 @@ layout: default
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
 
-  .timeline-container a {
-    display: block;
-    width: 100%;
-  }
-
   .timeline-container img {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
+    cursor: pointer;
   }
 
-  .timeline-container a:hover img {
+  .timeline-container:hover img {
     transform: scale(1.03);
   }
 
@@ -120,6 +125,7 @@ layout: default
   .research-list li {
     margin-bottom: 0.7rem;
     position: relative;
+    list-style-type: none;
   }
 
   .research-list li:before {
@@ -137,6 +143,7 @@ layout: default
     flex-wrap: wrap;
     gap: 0.8rem;
     margin: 1.5rem 0;
+    justify-content: center;
   }
 
   .profile-links a {
@@ -146,6 +153,7 @@ layout: default
     text-decoration: none;
     color: #007bff;
     transition: all 0.2s;
+    font-size: 0.9rem;
   }
 
   .profile-links a:hover {
@@ -199,10 +207,6 @@ layout: default
     cursor: pointer;
     user-select: none;
   }
-
-  .lightbox-close:hover {
-    color: #ccc;
-  }
 </style>
 
 <div class="content-grid">
@@ -212,8 +216,8 @@ layout: default
       <img src="avatar.jpg" alt="Ilya Afanasyev" class="avatar">
     </div>
     <p class="position">Expert at Chebyshev Research Center (Huawei) &<br>Adjunct Associate Professor</p>
-    <a href="#" class="github-link">View My GitHub Profile</a>
-    
+    <a href="https://github.com/afanasyspb" class="github-link">View My GitHub Profile</a>
+
     <div class="profile-links">
       <a href="https://scholar.google.ru/citations?user=Ogv_bdYAAAAJ" target="_blank">Google Scholar</a>
       <a href="https://www.researchgate.net/profile/Ilya-Afanasyev-3" target="_blank">ResearchGate</a>
@@ -224,22 +228,22 @@ layout: default
 
   <div class="main-content">
     <h1>About Me</h1>
-    
+
     <p><strong>Ilya M. Afanasyev, Ph.D.</strong>, is an Expert at the <strong>Chebyshev Research Center (Huawei)</strong> and an Adjunct Associate Professor at <strong>Innopolis University</strong> and <strong>Saint Petersburg Electrotechnical University "LETI"</strong>. He earned his Ph.D. in Optical and Optoelectronical Devices from Vavilov State Optical Institute (2006).</p>
-    
+
     <p>With over two decades of R&D experience, Dr. Afanasyev has worked in industry (Huawei, TGT, Giesecke & Devrient) and held academic positions at various institutions including the University of Trento, Innopolis University, KFU, ITMO, and SPbPU. He specializes in <strong>Autonomous Systems, Sensors, Computer Vision, and Mobile Robotics</strong>.</p>
-    
+
     <p>He is a <strong>Marie Curie Fellow alumnus</strong>, holder of 2 patents, and author of 50+ publications indexed in Scopus/WoS.</p>
 
     <h2>📅 Experience Timeline</h2>
-    
+
     <div class="timeline-container" onclick="openLightbox()">
       <img src="timeline.png" alt="Career Timeline (2000-2025)">
       <div class="timeline-caption">Visual overview of my academic and industrial career path (2000–2025). Click image to enlarge.</div>
     </div>
 
     <h2>🔬 Research Interests</h2>
-    
+
     <ul class="research-list">
       <li><strong>Mobile Robotics:</strong> SLAM, Navigation, Path Planning</li>
       <li><strong>Computer Vision:</strong> Object Detection, Tracking, Camera Calibration</li>
@@ -248,33 +252,33 @@ layout: default
     </ul>
 
     <h2>📚 Selected Publications & Patents</h2>
-    
+
     <p>Here are a few highlights. For the full list, please visit my <a href="https://scholar.google.ru/citations?user=Ogv_bdYAAAAJ" target="_blank">Google Scholar Profile</a>.</p>
-    
+
     <p><strong>Most Cited (SLAM Benchmarking)</strong><br>
     1. <strong>Comparison of Various SLAM Systems for Mobile Robot in an Indoor Environment.</strong><br>
     M. Filipenko, I. Afanasyev.<br>
     <em>9th IEEE International Conference on Intelligent Systems (IS)</em>, 2018.<br>
     [Cited by ~250+] <a href="https://doi.org/10.1109/IS.2018.8710464" target="_blank">DOI</a></p>
-    
+
     <p><strong>Lidar SLAM & Ground Truth Analysis</strong><br>
     2. <strong>Map Comparison of Lidar-based 2D SLAM Algorithms Using Precise Ground Truth.</strong><br>
     R. Yagfarov, M. Ivanou, I. Afanasyev.<br>
     <em>International Conference on Control, Automation, Robotics and Vision (ICARCV)</em>, Singapore, 2018.<br>
     [Cited by ~130+] <a href="https://doi.org/10.1109/ICARCV.2018.8581131" target="_blank">DOI</a></p>
-    
+
     <p><strong>Top Journal (UAV Efficiency)</strong><br>
     3. <strong>Game Theory-based Parameter Tuning for Energy-efficient Path Planning on Modern UAVs.</strong><br>
     D. Moolchandani, I. Afanasyev, et al.<br>
     <em>ACM Transactions on Cyber-Physical Systems</em>, Vol. 6(4), 2022.<br>
     <a href="https://doi.org/10.1145/3565270" target="_blank">DOI</a></p>
-    
+
     <p><strong>Intelligent Systems & IoT</strong><br>
     4. <strong>Towards the Internet of Robotic Things: Analysis, Architecture, Components and Challenges.</strong><br>
     I. Afanasyev, et al.<br>
     <em>12th International Conference on Developments in eSystems Engineering (DeSE)</em>, 2019.<br>
     [Cited by ~80] <a href="https://arxiv.org/abs/1907.03817" target="_blank">arXiv</a></p>
-    
+
     <p><strong>Patents (Hardware & UAV)</strong><br>
     5. <strong>Modular multi-rotor unmanned aerial vehicle of vertical take-off and landing.</strong><br>
     M. Galimov, I. Afanasyev, et al.<br>
@@ -282,7 +286,7 @@ layout: default
     <a href="https://patents.google.com/patent/RU2706765C1/en" target="_blank">Google Patents</a></p>
 
     <h2>🎓 Teaching (Highlights)</h2>
-    
+
     <ul class="research-list">
       <li><strong>Advanced Robotics</strong> (Master's level) – Innopolis University (2025-2026)</li>
       <li><strong>Optoelectronic Detecting Technology</strong> – ITMO & CUST (China), Changchun, China, 2025</li>
@@ -298,7 +302,6 @@ layout: default
   </div>
 </div>
 
-<!-- Lightbox modal for timeline image -->
 <div id="lightbox" class="lightbox-modal">
   <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
   <img class="lightbox-image" src="timeline.png" alt="Career Timeline (2000-2025)">
