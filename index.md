@@ -26,6 +26,14 @@ layout: default
     max-width: 300px;
   }
 
+  .name-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
   .avatar-container {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -42,6 +50,27 @@ layout: default
 
   .avatar:hover {
     transform: scale(1.05);
+  }
+
+  .position {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .github-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .github-link:hover {
+    text-decoration: underline;
   }
 
   /* Main content */
@@ -178,9 +207,12 @@ layout: default
 
 <div class="content-grid">
   <div class="sidebar">
+    <h1 class="name-header">Ilya M. Afanasyev, Ph.D.</h1>
     <div class="avatar-container">
       <img src="avatar.jpg" alt="Ilya Afanasyev" class="avatar">
     </div>
+    <p class="position">Expert at Chebyshev Research Center (Huawei) &<br>Adjunct Associate Professor</p>
+    <a href="#" class="github-link">View My GitHub Profile</a>
     
     <div class="profile-links">
       <a href="https://scholar.google.ru/citations?user=Ogv_bdYAAAAJ" target="_blank">Google Scholar</a>
@@ -188,8 +220,6 @@ layout: default
       <a href="https://ru.linkedin.com/in/ilya-afanasyev-8783291a" target="_blank">LinkedIn</a>
       <a href="mailto:ilya.afanasyev@gmail.com">Email</a>
     </div>
-    
-    <p><small>Expert at Chebyshev Research Center (Huawei)<br>Adjunct Associate Professor</small></p>
   </div>
 
   <div class="main-content">
@@ -275,27 +305,23 @@ layout: default
 </div>
 
 <script>
-  // Open lightbox modal
   function openLightbox() {
     document.getElementById('lightbox').classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    document.body.style.overflow = 'hidden';
   }
 
-  // Close lightbox modal
   function closeLightbox(event) {
-    event.stopPropagation(); // Prevent closing when clicking on close button
+    event.stopPropagation();
     document.getElementById('lightbox').classList.remove('active');
-    document.body.style.overflow = 'auto'; // Restore scrolling
+    document.body.style.overflow = 'auto';
   }
 
-  // Close lightbox when clicking anywhere on the modal background
   document.getElementById('lightbox').addEventListener('click', function(event) {
     if (event.target === this) {
       closeLightbox(event);
     }
   });
 
-  // Close lightbox with Escape key
   document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
       document.getElementById('lightbox').classList.remove('active');
