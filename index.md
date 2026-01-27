@@ -323,7 +323,7 @@ layout: default
     </ul>
 
     <div class="last-updated">
-      <small>Last updated: January 2025</small>
+      <small>Last updated: January 2026</small>
     </div>
   </div>
 </div>
