@@ -230,7 +230,7 @@ layout: default
     <div class="avatar-container">
       <img src="avatar.jpg" alt="Ilya Afanasyev" class="avatar">
     </div>
-    <p class="position">Senior R&D Expert, Key Project Engineer &<br>Adjunct Associate Professor</p>
+    <p class="position">Senior R&D Expert,<br>Key Project Engineer &<br>Adjunct Associate Professor</p>
     <a href="https://github.com/afanasyspb" class="github-link">View My GitHub Profile</a>
 
     <div class="profile-links">
@@ -263,9 +263,9 @@ layout: default
       <li><strong>Geometric (Clifford) Algebra:</strong> dual-quaternion geometric observers on SE(3), conformal geometric algebra for scene representation</li>
       <li><strong>State Estimation & Sensor Fusion:</strong> 6-DoF pose estimation, multi-radar/multi-camera calibration, IMU and visual odometry fusion</li>
       <li><strong>Mobile Robotics:</strong> SLAM, Navigation, Path Planning</li>
-      <li><strong>Computer Vision:</strong> Object Detection, Tracking, Camera Calibration</li>
+      <li><strong>Computer Vision:</strong> Object Detection, Tracking, Camera Calibration, Diffusion Models</li>
       <li><strong>Computational & Algorithmic Optimization:</strong> accelerating perception pipelines for GPU and CPU architectures</li>
-      <li><strong>Julia for Scientific Computing:</strong> differentiable programming and rapid prototyping in robotics</li>
+      <li><strong>Julia for Scientific Computing:</strong> differentiable programming and rapid prototyping</li>
       <li><strong>Intelligent Systems:</strong> UAV, Intelligent Transportation Systems (ITS), Human-Computer Interaction</li>
     </ul>
 
@@ -277,8 +277,8 @@ layout: default
       <span class="pub-category">A-level Conference Paper (Geometric Algebra in Sensor Fusion)</span><br>
       1. <strong>Geometric State Fusion for Autonomous Agents: A Comparative Analysis of Dual Quaternion Observer and Kalman Filters.</strong><br>
       I. Afanasyev. 
-      <em>Extended Abstract 1168, Proc. of the 25th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</em>, May 25-29, 2026, Paphos, Cyprus, IFAAMAS, 2026, pp. 3480-3482. 
-      <a href="https://doi.org/10.65109/CMZH8882" target="_blank">DOI: 10.65109/CMZH8882</a>, Project page: <a href="https://afanasyspb.github.io/SE3-Manifold-Lib/geodq.html" target="_blank">SE3-Manifold-Lib/GeoDQ</a>
+      <em>Ext. Abstract 1168, Proc. of the 25th Int. Conference on Autonomous Agents and Multiagent Systems (AAMAS 2026)</em>, May 25-29, 2026, Paphos, Cyprus, pp. 3480-3482. 
+      <a href="https://doi.org/10.65109/CMZH8882" target="_blank">DOI</a>, Project page: <a href="https://afanasyspb.github.io/SE3-Manifold-Lib/geodq.html" target="_blank">SE3-Manifold-Lib/GeoDQ</a>
     </p>
 
     <p>
