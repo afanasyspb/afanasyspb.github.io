@@ -325,13 +325,15 @@ layout: default
 
     <ul class="research-list">
       <li><strong>Advanced Robotics</strong> (Master's level), Innopolis University (2025-2026)</li>
-      <li><strong>Optoelectronic Detecting Technology</strong> and <strong>Condensed Matter Physics</strong>, ITMO & CUST (China), Changchun, 2025</li>
+      <li><strong>Optoelectronic Detecting Technology</strong>, ITMO & CUST (China), Changchun, 2025</li>
+      <li><strong>Condensed Matter Physics</strong>, ITMO & CUST (China), Changchun, 2025-2026</li>
       <li><strong>Foundation of Robotics</strong> and <strong>Computer Vision with OpenCV</strong>, Kazan Federal University (2021-2022)</li>
       <li><strong>Sensors of Transport Systems</strong> and <strong>Graph Database and Data Management</strong>, SPbPU industrial track (2021-2023)</li>
-      <li><strong>Sensors & Sensing</strong>, Innopolis University (2018-2020) and SPbPU (2021)</li>
+      <li><strong>Sensors & Sensing</strong>, Innopolis University (2018-2020, 2022-2023)</li>
       <li><strong>Intelligent Mobile Robotics</strong>, Innopolis University (2016-2020)</li>
       <li><strong>Control Theory</strong>, Innopolis University (2016-2019)</li>
       <li><strong>PhD supervision:</strong> Anvar Tliamov (since September 2025), mathematical modelling for robotics and multi-agent systems</li>
+      <li><strong>Thesis supervision:</strong> 18 Master's and 9 Bachelor's theses (27 in total, including co-supervisions)</li>
     </ul>
 
     <h2>🤝 Service to the Profession</h2>
